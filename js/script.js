@@ -34,7 +34,7 @@ $(document).ready(function () {
   
       imgAttiva.removeClass("active");
   
-      // se dove sono è l'ultima img allora
+      // se dove sono è la prima img allora
       if (imgAttiva.hasClass("first")){
         //torna alla prima img
         $("img.last").addClass("active");
