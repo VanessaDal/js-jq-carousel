@@ -29,7 +29,6 @@ $(document).ready(function () {
         dotAttivo.next("i").addClass("active");
       }
   
-      // $("img.active").removeClass("active").next("img").addClass("active");
     }
     
     $(".prev").click(prevImg);
@@ -54,5 +53,15 @@ $(document).ready(function () {
         dotAttivo.prev("i").addClass("active");
       }
     }
+
+
+    //provo funzionamento keypress
+    $(document).keydown(function(a) {
+        if ( a.keyCode === 37 ) {
+            prevImg();
+        } else if (a.keyCode === 39) {
+            nextImg();
+        }
+    } );
   });
   
